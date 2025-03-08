@@ -1,39 +1,23 @@
 {
-  "name": "api_typeorm",
-  "version": "1.0.0",
-  "description": "\"Initial Commit\"",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name" :  "node-mysql-crud-api",
+  "version" :  "1.0.0",
+  "license" :  "MIT",
+  "scripts" : {
+    "start" :  "node ./server.js",
+    "start:dev" :  "nodemon ./server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kuchinonaka/api_typeorm.git"
+
+  "dependencies" : {
+    "bycryptjs" :  "^2.4.3",
+    "cors" :"2.8.5",
+    "express" :  "^4.17.1",
+    "joi" :  "^17.2.0",
+    "mysql2" : "^2.1.0",
+    "rootpath" :  "^0.1.2",
+    "sequelize" :  "^6.3.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kuchinonaka/api_typeorm/issues"
-  },
-  "homepage": "https://github.com/kuchinonaka/api_typeorm#readme",
-  "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "helmet": "^8.0.0",
-    "http-status-codes": "^2.3.0",
-    "uuid": "^11.1.0"
-  },
-  "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cors": "^2.8.17",
-    "@types/dotenv": "^6.1.1",
-    "@types/express": "^5.0.0",
-    "@types/helmet": "^0.0.48",
-    "@types/http-status-codes": "^1.2.0",
-    "@types/uuid": "^10.0.0",
-    "typescript": "^5.8.2"
+
+"devDependencies" : {
+    "nodemon" :  "^2.0.4"
   }
 }
