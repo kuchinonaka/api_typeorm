@@ -4,6 +4,11 @@ module.exports = model;
 
 function model(sequelize) {
     const attributes = {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
+            primaryKey: true
+        },
         email: { type: DataTypes.STRING, allowNull: false},
         passwordHash: { type: DataTypes.STRING, allowNull: false},
         title: { type: DataTypes.STRING, allowNull: false},
